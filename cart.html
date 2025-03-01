@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-container"></div>
+    <button onclick="clearCart()">Clear Cart</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartContainer = document.getElementById('cart-container');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = "<p>Your cart is empty</p>";
+                return;
+            }
+
+            cart.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.innerHTML = `
+                    <img src="${product.image}" width="50">
+                    <p>${product.name} - ${product.price}</p>
+                `;
+                cartContainer.appendChild(productDiv);
+            });
+        });
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            location.reload();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#">LUNAVOGUE</a>
+    </div>
+
+    <!-- Menu Links -->
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+<!-- Cart Sidebar (Independent from Navbar) -->
+<div id="cart-sidebar">
+  <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button id="close-cart">&times;</button>
+  </div>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Total: ₹0</p>
+  <button id="clear-cart">Clear Cart</button>
+</div>
+
+    <!-- Icons -->
+    <div class="nav-icons">
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+      <!-- <a href="#"><i class="fas fa-heart"></i></a> -->
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!--HERO SECTION-->
+<section class="hero">
+    <div class="hero-content">
+      <h1>Discover the Latest Trends</h1>
+      <p>Upgrade your style with our exclusive collection of trendy products.</p>
+      <a href="#featured-products-section" class="shop-now-btn">Shop Now</a>
+    </div>
+  </section>
+  <section class="special-offers">
+    <div class="offer-banner">
+      <div class="offer-content">
+        <h2>Flash Sale!</h2>
+        <p class="offer-description">Hurry up! Get up to <span class="discount">50% OFF</span> on selected items.</p>
+        <p class="offer-details">Offer ends in:</p>
+        <div class="countdown-timer">
+          <div class="timer-box">
+            <span id="days">00</span>
+            <span class="timer-label">Days</span>
+          </div>
+          <div class="timer-box">
+            <span id="hours">00</span>
+            <span class="timer-label">Hours</span>
+          </div>
+          <div class="timer-box">
+            <span id="minutes">00</span>
+            <span class="timer-label">Minutes</span>
+          </div>
+          <div class="timer-box">
+            <span id="seconds">00</span>
+            <span class="timer-label">Seconds</span>
+          </div>
+        </div>
+        <a href="#" class="shop-now-btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  
+  <!--Featured Products Section-->
+  <section class="featured-products">
+    <h2 id="featured-products-section">Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="images/P1.jpg" alt="Product 1">
+        <h3>Rainbow Bloom  Cardigan</h3>
+        <p class="price">₹1,750</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="images/P2.jpg" alt="Product 2">
+        <h3>Teddy Charm Cardigan</h3>
+        <p class="price">₹1,500</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="images/P3.jpg" alt="Product 3">
+        <h3>Pink Lace Parachute Pants</h3>
+        <p class="price">₹1,500</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="images/P4.jpg" alt="Product 4">
+        <h3>Teddy Beige Parachute Pants</h3>
+        <p class="price">₹1,600</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="images/P5.jpg" alt="Product 5">
+        <h3>Lime Yellow Fairy Top</h3>
+        <p class="price">₹799</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="images/P6.jpg" alt="Product 6">
+        <h3>Blush Doll Dress</h3>
+        <p class="price">₹899</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="images/P7.jpg" alt="Product 7">
+        <h3>Rosy Soft Bodycon Dress</h3>
+        <p class="price">₹1,099</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="images/P8.jpg" alt="Product 8">
+        <h3>Ruffle Wrap Dress</h3>
+        <p class="price">₹1,899</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="images/P9.jpg" alt="Product 9">
+        <h3>Blush Lace-Up Heels</h3>
+        <p class="price">₹1,299</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img src="images/P10.jpg" alt="Product 10">
+        <h3>Orchid Bloom Mules</h3>
+        <p class="price">₹999</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img src="images/P11.jpg" alt="Product 2">
+        <h3>Bow Earrings</h3>
+        <p class="price">₹399</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img src="images/P12.jpg" alt="Product 2">
+        <h3>Heart Earrings</h3>
+        <p class="price">₹350</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <!--CATEGORY SECTIONS-->
+  </section>
+  <section class="product-categories">
+    <h2 id="categories">Shop by Category</h2>
+    <div class="category-grid">
+      <!-- Category 1: Dresses -->
+      <div class="category-card">
+        <img src="images/cat1.jpg" alt="Dresses" class="category-icon">
+        <h3>Dresses</h3>
+      </div>
+
+      <!-- Category 2: Tops -->
+      <div class="category-card">
+        <img src="images/cat2.jpg" alt="Tops" class="category-icon">
+        <h3>Tops</h3>
+      </div>
+
+      <!-- Category 3: Pants -->
+      <div class="category-card">
+        <img src="images/cat3.jpg" alt="Bottoms" class="category-icon">
+        <h3>Bottoms</h3>
+      </div>
+
+      <!-- Category 4: Skirts -->
+      <div class="category-card">
+        <img src="images/cat4.jpg" alt="Outerwear" class="category-icon">
+        <h3>Skirts</h3>
+      </div>
+
+      <!-- Category 5: Outerwear -->
+      <div class="category-card">
+        <img src="images/cat5.jpg" alt="Shoes" class="category-icon">
+        <h3>Outerwear</h3>
+      </div>
+
+      <!-- Category 6: Footwear -->
+      <div class="category-card">
+        <img src="images/cat6.jpg" alt="Accessories" class="category-icon">
+        <h3>Footwear</h3>
+      </div>
+
+      <!-- Category 4: Accessories -->
+      <div class="category-card">
+        <img src="images/cat7.jpg" alt="Outerwear" class="category-icon">
+        <h3>Accessories</h3>
+      </div>
+
+    </div>
+    <!--ABOUT US-->
+  </section>
+  <section class="about-us" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About LUNAVOGUE</h2>
+        <p class="intro">Welcome to LUNAVOGUE, where fashion meets elegance. We are dedicated to bringing you the latest trends in women's fashion, curated with care and sophistication.</p>
+        <p class="unique">What makes us unique is our commitment to quality and style. Each piece in our collection is handpicked to ensure it reflects the essence of modern luxury. From timeless classics to bold statement pieces, we have something for every fashion-forward woman.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/GP1.jpg" alt="Our Team">
+      </div>
+    </div>
+    <section class="customer-reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Review 1 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="user-info">
+                <img src="images/ul1.jpg" alt="User 1" class="user-avatar">
+                <div class="user-details">
+                  <h3>Jane Doe</h3>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="feedback">"I absolutely love my new dress from LUNAVOGUE! The quality is amazing, and it fits perfectly. Highly recommend!"</p>
+            </div>
+          </div>
+  
+          <!-- Review 2 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="user-info">
+                <img src="images/ul1.jpg" alt="User 2" class="user-avatar">
+                <div class="user-details">
+                  <h3>John Smith</h3>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="feedback">"The shoes I bought are so comfortable and stylish. Great customer service too. Will definitely shop again!"</p>
+            </div>
+          </div>
+  
+          <!-- Review 3 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="user-info">
+                <img src="images/ul1.jpg" alt="User 3" class="user-avatar">
+                <div class="user-details">
+                  <h3>Emily Johnson</h3>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="feedback">"LUNAVOGUE has the best collection of accessories. I always find something unique and trendy here."</p>
+            </div>
+          </div>
+  
+          <!-- Review 4 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="user-info">
+                <img src="images/ul1.jpg" alt="User 4" class="user-avatar">
+                <div class="user-details">
+                  <h3>Michael Brown</h3>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="feedback">"Great experience shopping at LUNAVOGUE. The delivery was fast, and the products are top-notch."</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Contact & Support Section -->
+  <section class="contact-support" id="contact">
+    <h2>Contact & Support</h2>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-accordion">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-question">How can I track my order?<i class="fas fa-chevron-down"></i></button>
+            <div class="accordion-answer">
+              <p>You can track your order by logging into your account and visiting the "Order History" section. You will receive a tracking number via email once your order is shipped.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-question">What is your return policy?<i class="fas fa-chevron-down"></i></button>
+            <div class="accordion-answer">
+              <p>We offer a 30-day return policy for unused and undamaged items. Please visit our Returns & Exchanges page for more details.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-question">How do I contact customer support?<i class="fas fa-chevron-down"></i></button>
+            <div class="accordion-answer">
+              <p>You can contact our customer support team by filling out the contact form on this page or emailing us at support@lunavogue.com.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-question">Do you offer international shipping?<i class="fas fa-chevron-down"></i></button>
+            <div class="accordion-answer">
+              <p>Yes, we offer international shipping to most countries. Shipping costs and delivery times vary depending on your location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Return Policy</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-media">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <!-- Copyright Text -->
+      <div class="copyright">
+        <p>&copy; 2023 LUNAVOGUE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
